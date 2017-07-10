@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: red;
+    height: 8vh;
+
+    .hero {
+        display: flex;
+        justify-content: center;
+
+        .hero-image {
+            border: 1px solid black;
+        }
+
+        .hero-title {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+    }
+    
+}
