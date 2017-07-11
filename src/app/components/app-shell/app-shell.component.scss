@@ -1,8 +1,11 @@
+@import "../../app.component.scss";
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: $base-color;
+    color: $nvGreen;
     height: 10vh;
 
     .navigation {

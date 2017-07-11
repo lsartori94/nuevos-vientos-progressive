@@ -1,9 +1,12 @@
+@import "../../app.component.scss"; 
+
 .container {
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    background-color: $base-color;
+    color: $nvGreen;
 
     .icon-container {
         display: flex;
