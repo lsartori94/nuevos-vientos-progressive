@@ -32,3 +32,13 @@
         font-size: 0.8em;
     }
 }
+
+@media all and (min-width: 600px) {
+    .container {
+        .icon-section {
+            .icon-container {
+                width: 5vw;
+            }
+        }
+    }
+}

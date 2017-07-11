@@ -20,7 +20,7 @@
             <div class="list">
                 <span *ngFor="let item of navItems" class="item">
                     <a routerLink="[{{  item.link  }}]" (click)="toggleModal()">
-                        {{ item.label }}
+                        {{ item.label | uppercase }}
                     </a>
                 </span>
             </div>

@@ -1,18 +1,76 @@
+@import "../../../assets/common.scss";
+
 .container {
     min-height: 80vh;
-}
+    padding-top: 10vh;
 
-.frontpage{
-    background-image: url("../../../assets/img/foto-hero-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80vh;
-}
+    &.mobile {
+        background-image: url("../../../assets/img/foto-hero-mobile.jpg");
+        background-repeat: no-repeat;
+    }
 
-#logobox{
-    max-width: 150px;
-    display: block;
-    margin: auto;    
-    position: relative;
-    top: 30vh;
+    &.desktop {
+        display: none;
+        // background-image: url("../../../assets/img/foto-hero-mobile.jpg");
+    }
+
+    .frontpage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        background-color: transparent;
+        margin-bottom: 10vh;
+        
+        #logobox {
+            max-width: 150px;
+            max-height: 70px
+        }
+    }
+
+    .container-intro {
+        display: flex;
+        justify-content: center;
+
+        .intro {
+            max-width: 86vw;
+            border-radius: 3px;
+            background-color: $nvWhite;
+
+            .container-title {
+                background-color: $nvGreen;
+                display: flex;
+                justify-content: center;
+
+                .title {
+                    padding: 20px 18px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h2 {
+                        font-size: 1.4em;
+                        color: $base-color;
+                    }
+                }
+            }
+
+            .container-paragraph {
+                padding: 20px 20px;
+            }
+        }
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+
+        iframe {
+            width: 100vw;
+            height: 40vh;
+            border: none;
+        }
+    }
 }

@@ -23,17 +23,16 @@ import { Component, trigger, transition, style, animate, state } from '@angular/
 })
 export class AppShellComponent {
 
-    private _assets = "../../../assets/";
+    private _assets = "../../../assets";
     showModal = false;
 
     hero = {
-        "logo": `${this._assets}/icons/logo-nav.png`,
+        "logo": `${this._assets}/icons/logo-nav.svg`,
         "title": "Nuevos Vientos"
     }
 
     navItems: Array<any> = [
-        { "label": "LABEL 1", "link": "#algo"},
-        { "label": "LABEL 2", "link": "#algo"}
+        { "label": "inscripciones", "link": "/enroll"},
     ]
 
     toggleModal() {
