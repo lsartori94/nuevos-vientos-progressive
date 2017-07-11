@@ -1,3 +1,18 @@
 .container {
     min-height: 80vh;
 }
+
+.frontpage{
+    background-image: url("../../../assets/img/foto-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+
+#logobox{
+    max-width: 150px;
+    display: block;
+    margin: auto;    
+    position: relative;
+    top: 30vh;
+}
