@@ -1,4 +1,4 @@
-@import "../../app.component.scss";
+@import "../../../assets/common.scss";
 
 .container {
     display: flex;
@@ -11,6 +11,7 @@
 
     .navigation {
         flex-grow: 45;
+
         i {
             margin-left: 0.8em;
             font-size: 2em;
@@ -34,4 +35,58 @@
 
     }
 
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: $base-alpha;
+    color: $nvGreen;
+
+    .modal-container {
+        margin-top: 2vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        background-color: transparent;
+
+        .container-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .button {
+                flex-grow: 45;
+                
+                i {
+                    font-size: 3em;
+                }
+            }
+        }
+
+        .container-list {
+            display: flex;
+            justify-content: flex-start;
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                padding-left: 10vw;
+                margin-top: 10vh;
+                font-size: 2em;
+
+                .item {
+                    margin-bottom: 2vh;
+
+                    a {
+                        color: $nvGreen;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }

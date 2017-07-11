@@ -1,16 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, trigger, transition, style, animate, state } from '@angular/core';
 
 @Component({
     selector: 'app-shell',
     templateUrl: './app-shell.component.html',
-    styleUrls: ['./app-shell.component.scss']
-    })
+    styleUrls: ['./app-shell.component.scss'],
+    animations: [
+        trigger(
+        'modalAnimation',
+        [
+            transition(
+                ':enter', [
+                    style({opacity: 0}),
+                    animate('250ms', style({'opacity': 1}))
+            ]),
+            transition(
+                ':leave', [
+                    style({'opacity': 1}),
+                    animate('250ms', style({'opacity': 0}))
+            ])]
+        )
+    ]
+})
 export class AppShellComponent {
 
     private _assets = "../../../assets/";
+    showModal = false;
 
-        hero = {
+    hero = {
         "logo": `${this._assets}/icons/logo-nav.png`,
         "title": "Nuevos Vientos"
-        }
+    }
+
+    navItems: Array<any> = [
+        { "label": "LABEL 1", "link": "#algo"},
+        { "label": "LABEL 2", "link": "#algo"}
+    ]
+
+    toggleModal() {
+        this.showModal = !this.showModal;
+    }
+
 }

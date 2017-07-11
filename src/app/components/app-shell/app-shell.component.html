@@ -1,10 +1,29 @@
-<div class="container">
+<div class="container" id="algo">
     <div class="navigation">
-        <i class="material-icons">menu</i>
+        <i class="material-icons" (click)="toggleModal()">menu</i>
     </div>
     <div class="hero">
         <div class="hero-image">
             <img src="{{ hero.logo }}">
+        </div>
+    </div>
+</div>
+
+<div class="modal" *ngIf="showModal" [@modalAnimation]>
+    <div class="modal-container">
+        <div class="container-title">
+            <span class="button" (click)="toggleModal()">
+                <i class="material-icons">close</i>
+            </span>
+        </div>
+        <div class="container-list">
+            <div class="list">
+                <span *ngFor="let item of navItems" class="item">
+                    <a routerLink="[{{  item.link  }}]" (click)="toggleModal()">
+                        {{ item.label }}
+                    </a>
+                </span>
+            </div>
         </div>
     </div>
 </div>
