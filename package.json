@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prestart": "ng build --aot --prod && ngc",
-    "start": "npm run precache && ts-node src/server.ts",
+    "postinstall": "ng build --aot --prod && ngc && npm run precache",
+    "start": "ts-node src/server.ts",
     "precache": "sw-precache --verbose --config=sw-precache-config.js"
   },
   "private": true,
