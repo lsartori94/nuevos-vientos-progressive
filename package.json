@@ -2,6 +2,9 @@
   "name": "nuevos-vientos-progressive",
   "version": "0.0.0",
   "license": "MIT",
+  "engines" : {
+    "node" : ">=7"
+  },
   "scripts": {
     "ng": "ng",
     "build": "ng build",
