@@ -1,7 +1,10 @@
 <div class="container">
-    <div class="icon-container">
-        <div *ngFor="let icon of social">
-            <i class="material-icons">{{icon.logo}}</i>
+    <div class="icon-section">
+        <div class="icon-container">
+            <a *ngFor="let icon of social" class="social-icon"
+                target="_blank" href="{{ icon.url }}">
+                <img src="{{ icon.logo }}">
+            </a>
         </div>
     </div>
     <div class="disclaimer">

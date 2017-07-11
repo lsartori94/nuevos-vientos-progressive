@@ -6,10 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-footer.component.scss']
 })
 export class AppfooterComponent {
+
+    private _assetsRoute = "../../../assets";
+    private _fbURL = "http://google.com";
+    private _instURL = "http://google.com";
+
     social: Array<any> = [
-        {'logo': 'face'},
-        {'logo': 'fingerprint'},
-        {'logo': 'grade'}
+        {
+            'logo': `${this._assetsRoute}/icons/facebook.png`,
+            'url': this._fbURL
+        },
+        {
+            'logo': `${this._assetsRoute}/icons/instagram.png`,
+            'url': this._instURL
+        }
     ]
-    disclaimer: string = "ESTO ES UN DISCLAIMER";
+    disclaimer: string = "®Nuevos Vientos";
 }
