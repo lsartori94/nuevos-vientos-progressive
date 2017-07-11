@@ -1,14 +1,21 @@
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: red;
-    height: 8vh;
+    height: 10vh;
+
+    .navigation {
+        flex-grow: 45;
+        i {
+            margin-left: 1em;
+        }
+    }
 
     .hero {
+        flex-grow: 60;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
 
         .hero-image {
             border: 1px solid black;
@@ -16,9 +23,10 @@
 
         .hero-title {
             display: flex;
+            align-items: center;
             justify-content: flex-start;
         }
 
     }
-    
+
 }

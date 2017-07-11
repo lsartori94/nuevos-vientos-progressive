@@ -1,0 +1,17 @@
+.container {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer {
+        display: flex;
+        justify-content: center;
+    }
+}
