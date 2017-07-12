@@ -39,6 +39,7 @@
         }
 
         .message {
+            font-family: 'Roboto';
             color: $nvWhite;
             padding: 0 10vw;
         }
@@ -52,6 +53,7 @@
         min-height: 45vw;
 
         .button{
+            font-family: 'Roboto';
             background-color: $nvGreen;
             height: 10vw;
             width: 60vw;
@@ -60,6 +62,7 @@
             align-items: center;
 
             a {
+                font-family: 'Roboto';
                 text-decoration: none;
                 color: $base-color;
             }
