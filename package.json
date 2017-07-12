@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod && ngc && npm run precache",
+    "postinstall": "ng build --aot -prod && npm run precache",
     "start": "ts-node src/server.ts",
     "precache": "sw-precache --verbose --config=sw-precache-config.js"
   },
