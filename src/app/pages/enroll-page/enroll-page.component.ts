@@ -1,9 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, trigger, transition, style, animate, state, OnInit } from '@angular/core';
 
 @Component({
   selector: 'enroll-page',
   templateUrl: './enroll-page.component.html',
-  styleUrls: ['./enroll-page.component.scss']
+  styleUrls: ['./enroll-page.component.scss'],
+  animations: [
+        trigger(
+        'pageAnimation',
+        [
+            transition(
+                ':enter', [
+                    style({opacity: 0}),
+                    animate('250ms', style({'opacity': 1}))
+            ]),
+            transition(
+                ':leave', [
+                    style({'opacity': 1}),
+                    animate('250ms', style({'opacity': 0}))
+            ])]
+        )
+    ]
 })
 export class EnrollPageComponent implements OnInit {
 

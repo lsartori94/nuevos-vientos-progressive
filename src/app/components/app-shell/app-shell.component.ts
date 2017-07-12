@@ -32,6 +32,7 @@ export class AppShellComponent {
     }
 
     navItems: Array<any> = [
+        { "label": "home", "link": "/home"},
         { "label": "inscripciones", "link": "/enroll"},
     ]
 
