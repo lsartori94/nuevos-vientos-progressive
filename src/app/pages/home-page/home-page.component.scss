@@ -11,7 +11,8 @@
 
     &.desktop {
         display: none;
-        // background-image: url("../../../assets/img/foto-hero-mobile.jpg");
+        background-image: url("../../../assets/img/foto-hero.jpg");
+        background-repeat: no-repeat;
     }
 
     .frontpage {
@@ -34,7 +35,6 @@
 
         .intro {
             max-width: 86vw;
-            border-radius: 3px;
             background-color: $nvWhite;
 
             .container-title {
@@ -69,8 +69,57 @@
 
         iframe {
             width: 100vw;
-            height: 40vh;
+            height: 58vw;
             border: none;
+        }
+    }
+
+    .enroll {
+        .container-enroll {
+            height: 35vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .container-title {
+                color: $nvGreen;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container-button {
+                margin-bottom: 5vh;
+                font-size: 1.5em;
+
+                .button {
+                    background-color: $nvGreen;
+                    height: 8vh;
+                    width: 50vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 600px) {
+    .container {
+        
+        &.mobile {
+            display: none;
+        }
+
+        &.desktop {
+            display: block;
         }
     }
 }

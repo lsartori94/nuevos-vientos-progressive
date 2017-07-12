@@ -1,7 +1,7 @@
 @import "../../../assets/common.scss";
 
 .container {
-    height: 10vh;
+    height: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@
     .container {
         .icon-section {
             .icon-container {
-                width: 5vw;
+                width: 30vh;
             }
         }
     }

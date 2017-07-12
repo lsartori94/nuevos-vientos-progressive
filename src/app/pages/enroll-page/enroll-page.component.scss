@@ -1,0 +1,83 @@
+@import '../../../assets/common.scss';
+
+.container {
+    min-height: 85vh;
+
+    .container-hero{
+        min-height: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+
+        &.mobile {
+            background-image: url('../../../assets/img/foto-hero-mobile.jpg');
+        }
+
+        &.desktop {
+            display: none;
+            background-image: url('../../../assets/img/foto-hero.jpg');
+        }
+
+        .hero-title {
+            font-size: 1.2em;
+            color: $nvGreen;
+        }
+    }
+
+    .container-message {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 30vw;
+
+        .title {
+            color: $nvGreen;
+            font-size: 1.2em;
+            margin: 2vw 0;
+        }
+
+        .message {
+            color: $nvWhite;
+            padding: 0 10vw;
+        }
+    }
+
+    .container-forms {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 45vw;
+
+        .button{
+            background-color: $nvGreen;
+            height: 10vw;
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: $base-color;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 600px) {
+    .container {
+        .container-hero{
+
+            &.mobile {
+                display: none;
+            }
+
+            &.desktop {
+                display: flex;
+            }
+        }
+    }
+}

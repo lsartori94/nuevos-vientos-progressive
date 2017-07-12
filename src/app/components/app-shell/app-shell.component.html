@@ -4,7 +4,7 @@
     </div>
     <div class="hero">
         <div class="hero-image">
-            <img src="{{ hero.logo }}">
+            <a routerLink="/home"><img src="{{ hero.logo }}"></a>
         </div>
     </div>
 </div>
@@ -19,7 +19,7 @@
         <div class="container-list">
             <div class="list">
                 <span *ngFor="let item of navItems" class="item">
-                    <a routerLink="[{{  item.link  }}]" (click)="toggleModal()">
+                    <a routerLink="{{  item.link  }}" (click)="toggleModal()">
                         {{ item.label | uppercase }}
                     </a>
                 </span>

@@ -1,6 +1,5 @@
+@import '../assets/common.scss';
+
 .container {
-    background-image: url('../assets/img/fondo1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: $background;
 }
