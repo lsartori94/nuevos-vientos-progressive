@@ -13,6 +13,7 @@
         display: none;
         background-image: url("../../../assets/img/foto-hero.jpg");
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .frontpage {
@@ -125,6 +126,29 @@
 
         &.desktop {
             display: block;
+        }
+
+        .container-intro {
+            .intro {
+                max-width: 35em;
+            }
+        }
+
+        .video {
+            iframe {
+                max-height: 30em;
+                max-width: 50em;
+            }
+        }
+
+        .enroll {
+            .container-enroll {
+                .container-button {
+                    .button {
+                        max-width: 10em;
+                    }
+                }
+            }
         }
     }
 }

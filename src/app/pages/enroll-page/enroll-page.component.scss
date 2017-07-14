@@ -12,11 +12,13 @@
 
         &.mobile {
             background-image: url('../../../assets/img/foto-hero-mobile.jpg');
+            background-size: cover;
         }
 
         &.desktop {
             display: none;
             background-image: url('../../../assets/img/foto-hero.jpg');
+            background-size: cover;
         }
 
         .hero-title {
@@ -30,7 +32,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        min-height: 30vw;
+        min-height: 30vh;
 
         .title {
             color: $nvGreen;
@@ -50,7 +52,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        min-height: 45vw;
+        min-height: 33vh;
 
         .button{
             font-family: 'Roboto';
@@ -74,12 +76,34 @@
     .container {
         .container-hero{
 
+            min-height: 30vh;
+
             &.mobile {
                 display: none;
             }
 
             &.desktop {
                 display: flex;
+                width: 100%;
+            }
+        }
+
+        .container-message {
+            min-height: 12em;
+            justify-content: flex-start;
+
+            .message {
+                max-width: 35em;
+            }
+        }
+        
+        .container-forms {
+            // min-height: 25vw;
+            margin-bottom: 3vh;
+
+            .button {
+                max-height: 3em;
+                max-width: 15em;
             }
         }
     }
