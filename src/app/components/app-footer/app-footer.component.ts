@@ -13,11 +13,11 @@ export class AppfooterComponent {
 
     social: Array<any> = [
         {
-            'logo': `${this._assetsRoute}/icons/facebook.png`,
+            'logo': `${this._assetsRoute}/icons/facebook.svg`,
             'url': this._fbURL
         },
         {
-            'logo': `${this._assetsRoute}/icons/instagram.png`,
+            'logo': `${this._assetsRoute}/icons/instagram.svg`,
             'url': this._instURL
         }
     ]

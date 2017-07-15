@@ -11,13 +11,13 @@
         background-repeat: no-repeat;
 
         &.mobile {
-            background-image: url('../../../assets/img/foto-hero-mobile.jpg');
+            background-image: url('../../../assets/img/enroll-mobile.jpg');
             background-size: cover;
         }
 
         &.desktop {
             display: none;
-            background-image: url('../../../assets/img/foto-hero.jpg');
+            background-image: url('../../../assets/img/enroll-desktop.jpg');
             background-size: cover;
         }
 

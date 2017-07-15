@@ -5,13 +5,13 @@
     padding-top: 10vh;
 
     &.mobile {
-        background-image: url("../../../assets/img/foto-hero-mobile.jpg");
+        background-image: url("../../../assets/img/home-hero-mobile.jpg");
         background-repeat: no-repeat;
     }
 
     &.desktop {
         display: none;
-        background-image: url("../../../assets/img/foto-hero.jpg");
+        background-image: url("../../../assets/img/home-hero-desktop.jpg");
         background-repeat: no-repeat;
         background-size: contain;
     }
