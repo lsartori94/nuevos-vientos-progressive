@@ -18,8 +18,8 @@
         </div>
     </div>
     <div class="container-forms">
-        <div class="button" *ngFor="let button of buttons">
-            <a href="{{ button.link }}">{{ button.label | uppercase }}</a>
-        </div>
+        <a class="button" *ngFor="let button of buttons" href="{{ button.link }}">
+            {{ button.label | uppercase }}
+        </a>
     </div>
 </div>

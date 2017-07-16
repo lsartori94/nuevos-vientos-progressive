@@ -63,12 +63,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            a {
-                font-family: 'Roboto';
-                text-decoration: none;
-                color: $base-color;
-            }
+            font-family: 'Roboto';
+            text-decoration: none;
+            color: $base-color;
         }
     }
 }

@@ -105,12 +105,9 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
-                    a {
-                        font-family: 'Roboto';
-                        text-decoration: none;
-                        color: $base-color;
-                    }
+                    font-family: 'Roboto';
+                    text-decoration: none;
+                    color: $base-color;
                 }
             }
         }
