@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class AppfooterComponent {
 
     private _assetsRoute = "../../../assets";
-    private _fbURL = "http://google.com";
-    private _instURL = "http://google.com";
+    private _fbURL = "https://goo.gl/VfH4dN";
+    private _instURL = "https://goo.gl/tq7KFy";
+    private _twURL = "https://goo.gl/xoaEF9";
 
     social: Array<any> = [
         {
