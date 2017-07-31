@@ -9,5 +9,11 @@ app.use(express.static(__dirname + '/../dist'));
 // Heroku port
 app.listen(process.env.PORT || 8080);
 app.get('/*', function(req, res) {
+  var host = req.header("host");
+  if (host.match(/^www\..*/i)) {
+    next();
+  } else {
+    res.redirect(301, "http://www." + host);
+  }
   res.sendFile(path.join(__dirname + '/../dist/index.html'));
 });
