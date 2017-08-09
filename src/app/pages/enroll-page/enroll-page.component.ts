@@ -25,7 +25,8 @@ export class EnrollPageComponent implements OnInit {
 
   heroTitle = "nuevos vientos 2017";
   messageTitle = "convocatoria";
-  message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+  message = "Sumate a nuestra edición 2017. Si querés mostrar tu trabajo o participar en nuestro festival, podés hacerlo completando los siguientes formularios. Hay convocatorias para músicos, feriantes, fotógrafos, proyectos multimediales y más.";
+  messageShout = "¡No te pierdas la oportunidad de formar parte del Festival Nuevos Vientos 2017!";
 
   buttons: Array<any> =[
     { "link": "https://goo.gl/a1WURD", "label": "quiero tocar en vivo" },
