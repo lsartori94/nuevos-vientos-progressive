@@ -31,7 +31,7 @@ export class EnrollPageComponent implements OnInit {
   buttons: Array<any> =[
     { "link": "https://goo.gl/a1WURD", "label": "quiero tocar en vivo" },
     { "link": "https://goo.gl/RQHDz9", "label": "quiero exponer" },
-    { "link": "https://goo.gl/ACCnLg", "label": "quiero vender" }
+    { "link": "https://goo.gl/ACCnLg", "label": "quiero ferear" }
   ];
 
   constructor() { }
